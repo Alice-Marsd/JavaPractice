@@ -1,0 +1,26 @@
+package com.dd;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class PersonList {
+	private List<Person> all=new ArrayList<Person>();
+	
+	
+	public PersonList() throws IOException {
+		Reader in=new FileReader("../team.txt");
+		BufferedReader br=new BufferedReader(in);
+		String line=null;
+		while((line=br.readLine())!=null)
+		{
+			System.out.println(line);
+		}
+		
+	}
+
+}

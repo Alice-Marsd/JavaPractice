@@ -1,0 +1,26 @@
+package com.juice;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan=new Scanner(System.in);
+		int n=scan.nextInt();
+		int cnt=0;
+		while(n!=0)
+		{
+			cnt=MaxJuice(n);
+			System.out.println(cnt);
+			n=scan.nextInt();
+		}
+
+	}
+
+	private static int MaxJuice(int n) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

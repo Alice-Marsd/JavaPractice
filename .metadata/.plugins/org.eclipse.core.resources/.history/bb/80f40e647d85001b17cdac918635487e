@@ -1,0 +1,46 @@
+package com.transfer;
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int  result=0;
+        while (scan.hasNextInt()) 
+        { 
+            String str= scan.nextLine();
+            result=transfer(str);
+            System.out.println(result);
+        }
+    }
+
+	private static int transfer(String str) {
+		if(str.isEmpty()||str==null)  return 0;
+		int num=0,i=2;
+		while(i<str.length())
+		{
+			switch (str[i]) {
+			case 'A':
+				num=10;
+				break;
+			case 'B':
+				num=11;
+				break;
+			case 'C':
+				num=12;
+				break;
+			case 'D':
+				num=13;
+				break;
+			case 'E':
+				num=14;
+				break;
+			case 'F':
+				num=15;
+				break;
+			default:
+				break;
+			}
+		}
+		return num;
+	}
+}
