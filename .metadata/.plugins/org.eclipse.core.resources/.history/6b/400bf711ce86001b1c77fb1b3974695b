@@ -1,0 +1,39 @@
+package com.reverseSentence;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String str=null;
+		while(scan.hasNextLine())
+		{
+			str=scan.nextLine();
+			str=reverseSentence(str);
+			System.out.println(str);
+		}
+
+	}
+
+	private static String reverseSentence(String str) {
+		if (str.isEmpty() || str.equals("")) return "";
+		String[] words=str.split(" ");
+		int n=words.length;
+		String result;
+		int i,j=n-1;
+		for(i=0;i<n/2;++i)
+		{
+			String s=words[i];
+			words[i]=words[j];
+			words[j]=s;
+		}
+		result=words[0];
+		for (int j2 = 1; j2 < words.length; j2++) {
+			
+			result=result+" "+words[i];
+		}
+		return result;
+	}
+
+}

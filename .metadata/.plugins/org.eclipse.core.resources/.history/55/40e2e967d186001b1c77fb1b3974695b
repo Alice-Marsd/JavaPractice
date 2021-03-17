@@ -1,0 +1,26 @@
+package com.reverseSentence;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String str=null;
+//		while(scan.hasNextLine())
+//		{
+			//str=scan.nextLine();
+			str="I am a boy";
+			reverseSentence(str);
+			
+//		}
+//
+	}
+
+	private static void reverseSentence(String str) {
+		if (str.isEmpty() || str.equals("")) return ;
+		String[] words=str.split(" ");
+		
+	}
+
+}
