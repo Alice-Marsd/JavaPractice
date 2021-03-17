@@ -1,0 +1,26 @@
+package com.deleteIndex;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int n;
+		Scanner scan=new Scanner(System.in);
+		while(scan.hasNextInt())
+		{
+			n=scan.nextInt();
+			int index=FindLastNum(n);
+			System.out.println(index);
+		}
+		
+		
+		
+	}
+
+	private static int FindLastNum(int n) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
