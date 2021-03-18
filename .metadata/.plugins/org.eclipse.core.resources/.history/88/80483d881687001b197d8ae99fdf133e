@@ -1,0 +1,24 @@
+package com.competition;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int num=0;
+		while(scan.hasNextInt())
+		{
+			num=scan.nextInt();
+			Competition(1,num);
+		}
+	}
+
+	private static void Competition(int i,int j) {
+		if(i>=j) return ;
+		System.out.print('('+i+','+j);
+		Competition(i+1,j-1);
+		System.out.print(')');
+	}
+
+}

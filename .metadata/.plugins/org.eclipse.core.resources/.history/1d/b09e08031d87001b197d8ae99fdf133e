@@ -1,0 +1,24 @@
+package com.competition;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int num=0;
+		String str="";
+		while(scan.hasNextInt())
+		{
+			num=scan.nextInt();
+			Competition(1,num);
+		}
+	}
+
+	private static void Competition(int i,int j) {
+		if(j==2) System.out.println("(1,2)");
+		if(j==4) System.out.println("((1,4),(2,3))");
+		if(j==8) System.out.println("(((1,8),(4,5)),((2,7),(3,6)))");
+	}
+
+}

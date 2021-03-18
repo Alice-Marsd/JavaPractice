@@ -13,7 +13,6 @@ public class Main {
 		while(scan.hasNextLine())
 		{
 			str=scan.nextLine();
-			
 			c=scan.nextLine();
 			cnt=countNum(str,c);
 			System.out.println(cnt);

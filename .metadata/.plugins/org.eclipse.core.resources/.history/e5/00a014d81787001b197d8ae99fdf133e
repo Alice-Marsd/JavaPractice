@@ -1,0 +1,28 @@
+package com.competition;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int num=0;
+		String str="";
+		while(scan.hasNextInt())
+		{
+			num=scan.nextInt();
+			Competition(str,1,num);
+			System.out.println(str);
+		}
+	}
+
+	private static void Competition(String str,int i,int j) {
+		if(i<j)
+		{
+			str=str+'('+i;
+			Competition(str,i+1,j-1);
+			str=str+','+j;
+		}
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.competition;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int num=0;
+		String str="";
+		while(scan.hasNextInt())
+		{
+			num=scan.nextInt();
+			Competition(num);
+		}
+	}
+
+	private static void Competition(int num) {
+		if(num<=0) return ;
+		while()
+	}
+
+}
