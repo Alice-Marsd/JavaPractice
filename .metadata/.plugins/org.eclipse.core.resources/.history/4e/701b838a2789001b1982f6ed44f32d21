@@ -27,6 +27,7 @@ public class Main {
 		String value=null;
 		for (int i = 0; i <= num; i++) {
 			list.add(String.valueOf(i));	
+			System.out.println(list.get(i));
 		}
 		while(num!=0)
 		{
@@ -34,6 +35,7 @@ public class Main {
 			{
 				value="("+list.get(i)+","+list.get(j)+")";
 				list.set(i, value);			
+				System.out.println("value="+value);
 			}
 			num=num/2;
 		}

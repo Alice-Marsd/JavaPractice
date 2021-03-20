@@ -12,12 +12,10 @@ public class Main {
 	{
 		Scanner scan=new Scanner(System.in);
 		int num=0;
-		String result=null;
 		while(scan.hasNextInt())
 		{
 			num=scan.nextInt();
-			result=Competition(num);
-			System.out.println(result);
+			Competition(num);
 		}
 	}
 
@@ -25,20 +23,21 @@ public class Main {
 	{
 		ArrayList<String> list=new ArrayList();
 		String value=null;
-		for (int i = 0; i <= num; i++) {
+		for (int i = 1; i <= num; i++) {
 			list.add(String.valueOf(i));	
+			System.out.println(list.get(i));
 		}
 		while(num!=0)
 		{
-			for (int i = 1,j = num; i < j; i++,j--)
+			for (int i = 1,j = num; i != j; i++,j--)
 			{
 				value="("+list.get(i)+","+list.get(j)+")";
-				list.set(i, value);			
+				list.set(i, value);				
 			}
 			num=num/2;
 		}
 		
-		return list.get(1);
+		return list.get(0);
 	}
 
 

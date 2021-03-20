@@ -11,7 +11,7 @@ public class Main {
 		{
 			int  k=scan.nextInt();
 			int w=scan.nextInt();
-			int []profits=new int[3];
+			int []profits=new int[]
 		}
 	}
 
